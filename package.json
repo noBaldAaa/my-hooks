@@ -24,14 +24,8 @@
     "eject": "react-scripts eject"
   },
   "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest",
-      "prettier"
-    ]
+    "**/*": "prettier --write --ignore-unknown",
+    "src/*": "eslint --ext .js,.ts,.tsx"
   },
   "browserslist": {
     "production": [
@@ -46,6 +40,10 @@
     ]
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.17.0",
+    "@typescript-eslint/parser": "^5.17.0",
+    "eslint": "^8.12.0",
+    "eslint-plugin-react": "^7.29.4",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.7",
     "prettier": "2.6.2"
