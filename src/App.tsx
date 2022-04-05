@@ -3,6 +3,7 @@ import "./App.css";
 
 import ExampleUseDebounce from "./hooks/useDebounce/Example";
 import ExampleUseMount from "./hooks/useMount/Example";
+import ExampleUseUnmount from "./hooks/useUnMount/Example";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <div>ExampleUseDebounce:</div>
       <ExampleUseDebounce />
       <ExampleUseMount />
+      <ExampleUseUnmount />
     </div>
   );
 }

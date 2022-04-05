@@ -1,8 +1,9 @@
-import { EffectCallback, useEffect } from "react";
 /**
  * 使用方式：
  * useMount(()=>{xxx})
  */
+
+import { EffectCallback, useEffect } from "react";
 
 export const useMount = (callback: EffectCallback) => {
   if (typeof callback !== "function") {
