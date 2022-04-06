@@ -2,9 +2,9 @@
  * 例子
  */
 import React, { useState } from "react";
-import { useDebounce } from ".";
+import { useDebounce } from "../hooks/useDebounce";
 
-const ExampleUseDebounce = () => {
+const UseDebounceExample = () => {
   const [value, setValue] = useState("hello wrold");
   const debounceValue = useDebounce(value, 1000);
 
@@ -20,4 +20,4 @@ const ExampleUseDebounce = () => {
   );
 };
 
-export default ExampleUseDebounce;
+export default UseDebounceExample;

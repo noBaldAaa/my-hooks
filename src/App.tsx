@@ -1,17 +1,18 @@
 import React from "react";
 import "./App.css";
 
-import ExampleUseDebounce from "./hooks/useDebounce/Example";
-import ExampleUseMount from "./hooks/useMount/Example";
-import ExampleUseUnmount from "./hooks/useUnMount/Example";
+import UseDebounceExample from "./example/UseDebounceExample";
+import UseMountExample from "./example/UseMountExample";
+import UseUnmountExample from "./example/UseUnmountExample";
+import UseUpdateEffectExample from "./example/UseUpdateEffectExample";
 
 function App() {
   return (
     <div className="App">
-      <div>ExampleUseDebounce:</div>
-      <ExampleUseDebounce />
-      <ExampleUseMount />
-      <ExampleUseUnmount />
+      <UseDebounceExample />
+      <UseMountExample />
+      <UseUnmountExample />
+      <UseUpdateEffectExample />
     </div>
   );
 }

@@ -2,9 +2,9 @@
  * 例子
  */
 import React, { useState } from "react";
-import { useUnMount } from ".";
+import { useUnMount } from "../hooks/useUnMount";
 
-const ExampleUseUnmount = () => {
+const UseUnmountExample = () => {
   const [num, setNum] = useState(0);
 
   useUnMount(() => console.log(num, "num"));
@@ -12,4 +12,4 @@ const ExampleUseUnmount = () => {
   return <div onClick={() => setNum(num + 1)}>{num}</div>;
 };
 
-export default ExampleUseUnmount;
+export default UseUnmountExample;
