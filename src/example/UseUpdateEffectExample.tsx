@@ -9,8 +9,11 @@ const UseUpdateEffectExample = () => {
   const [num, setNum] = useState(0);
 
   useUpdateEffect(() => {
-    console.log(num, "UseUpdateEffectExample");
-    return () => console.log("hello");
+    console.log(num, "123456");
+
+    return () => {
+      console.log("销毁之前num:", num);
+    };
   }, [num]);
 
   return (

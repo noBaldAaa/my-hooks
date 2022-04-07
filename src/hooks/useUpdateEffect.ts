@@ -2,17 +2,15 @@
  * useUpdateEffect
  * 使用用法与useEffect相同，只是当依赖更新时才会执行
  */
-import { DependencyList, useEffect, useRef } from "react";
-export const useUpdateEffect = (effect: () => any, deps?: DependencyList) => {
-  const ref = useRef(false);
+import { useEffect } from "react";
+import { useFirstMountState } from "./useFirstMountState";
+
+export const useUpdateEffect: typeof useEffect = (effect, deps) => {
+  const isFirstMount = useFirstMountState();
 
   useEffect(() => {
-    if (ref.current) {
-      effect();
+    if (!isFirstMount) {
+      return effect();
     }
-
-    return () => {
-      ref.current = true;
-    };
   }, deps);
 };
