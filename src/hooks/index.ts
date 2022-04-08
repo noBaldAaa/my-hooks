@@ -3,7 +3,3 @@ export * from "./useMount";
 export * from "./useUnMount";
 export * from "./useUpdateEffect";
 export * from "./useFirstMountState";
-
-let a: string[] = 1;
-a.slice(1, 1);
-console.log(a);
