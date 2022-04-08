@@ -1,5 +1,5 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-# npx run tsc
+yarn run tsc
 npx lint-staged
