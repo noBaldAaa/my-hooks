@@ -3,8 +3,8 @@
  */
 import { useState } from "react";
 
-export const useSetState = <T extends object>(objValue: T | (() => T)) => {
-  const [state, setState] = useState<T>(objValue);
+export const useSetState = <T extends object>(initialState: T | (() => T)) => {
+  const [state, setState] = useState<T>(initialState);
 
   const set = (value: Partial<T> | ((preState: T) => Partial<T>)): void => {
     setState({
