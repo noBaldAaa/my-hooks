@@ -7,9 +7,10 @@ export const useSetState = <T extends object>(objValue: T | (() => T)) => {
   const [state, setState] = useState<T>(objValue);
 
   const set = (value: Partial<T> | ((preState: T) => Partial<T>)): void => {
-    setState(
-      Object.assign({}, state, value instanceof Function ? value(state) : value)
-    );
+    setState({
+      ...state,
+      ...(value instanceof Function ? value(state) : value),
+    });
   };
 
   return [state, set] as const;
