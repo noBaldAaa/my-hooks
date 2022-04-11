@@ -1,5 +1,6 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-# yarn run tsc 全量检测
+# 全量检测
+yarn run tsc 
 npx lint-staged
