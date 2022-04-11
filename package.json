@@ -27,7 +27,7 @@
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown",
     "src/**.{js,jsx,ts,tsx}": "eslint --ext .js,.jsx,.ts,.tsx",
-    "**/*.{less,css}": "stylelint --cache --fix"
+    "**/*.{less,css}": "stylelint --fix"
   },
   "browserslist": {
     "production": [
