@@ -20,8 +20,8 @@ export const useThrottle = <T>(initialState: T, delay = 5000) => {
       setState(initialState);
       const timeoutCallback = () => {
         if (hasNextValue.current) {
-          hasNextValue.current = false;
           setState(nextValue.current);
+          hasNextValue.current = false;
         }
         timeout.current = undefined;
       };
