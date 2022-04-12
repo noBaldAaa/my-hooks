@@ -5,6 +5,7 @@ import UseDebounceExample from "./example/UseDebounceExample";
 import UseMountExample from "./example/UseMountExample";
 import UseSafeStateExample from "./example/UseSafeStateExample";
 import UseSetStateExample from "./example/UseSetStateExample";
+import UseThrottleDemo from "./example/UseThrottleDemo";
 import UseUnmountExample from "./example/UseUnmountExample";
 import UseUpdateEffectExample from "./example/UseUpdateEffectExample";
 
@@ -17,6 +18,7 @@ function App() {
       <UseUpdateEffectExample />
       <UseSetStateExample />
       <UseSafeStateExample />
+      <UseThrottleDemo />
     </div>
   );
 }
