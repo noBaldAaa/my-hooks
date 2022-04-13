@@ -2,7 +2,7 @@
  * 防抖Effect hooks
  */
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useDebounceEffect } from "../hooks/useDebounceEffect";
 const UseDebounceEffectDemo = () => {
   const [number, setNumber] = useState("100");

@@ -22,5 +22,6 @@ module.exports = {
     "react/jsx-key": 2, //map的时候必须有key
     "react/self-closing-comp": 2, //必须是闭合标签
     "react/react-in-jsx-scope": 0, //不用每次引入React
+    "no-unused-vars": 0, //不允许出现未使用的变量
   },
 };
