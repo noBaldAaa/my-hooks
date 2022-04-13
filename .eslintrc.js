@@ -18,5 +18,8 @@ module.exports = {
     sourceType: "module",
   },
   plugins: ["react", "@typescript-eslint"],
-  rules: {},
+  rules: {
+    "react/jsx-key": true,
+    "react/self-closing-comp": true,
+  },
 };
