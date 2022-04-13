@@ -9,3 +9,4 @@ export * from "./useIsUnMountRef";
 export * from "./useThrottle";
 export * from "./useThrottleEffect";
 export * from "./useLatestState";
+export * from "./useDebounceEffect";

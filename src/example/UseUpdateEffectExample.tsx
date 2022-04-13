@@ -3,7 +3,7 @@
  */
 
 import { useState } from "react";
-import { useUpdateEffect } from "../hooks/useUpdateEffect";
+import { useUpdateEffect } from "../hooks";
 
 const UseUpdateEffectExample = () => {
   const [num, setNum] = useState(0);
