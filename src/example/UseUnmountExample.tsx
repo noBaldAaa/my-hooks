@@ -1,7 +1,7 @@
 /**
  * 例子
  */
-import React, { useState } from "react";
+import { useState } from "react";
 import { useUnMount } from "../hooks/useUnMount";
 
 const UseUnmountExample = () => {

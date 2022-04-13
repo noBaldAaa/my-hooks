@@ -2,11 +2,11 @@
  * 始终能够保证拿到最新的state
  */
 
-import React from "react";
+import { useState } from "react";
 import { useLatestState } from "../hooks";
 
 const Demo = () => {
-  const [count, setCount] = React.useState(0);
+  const [count, setCount] = useState(0);
   const latestCount = useLatestState(count);
 
   function handleAlertClick() {

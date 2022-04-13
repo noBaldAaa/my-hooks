@@ -1,7 +1,7 @@
 /**
  * 例子
  */
-import React, { useState } from "react";
+import { useState } from "react";
 import { useDebounce } from "../hooks/useDebounce";
 
 const UseDebounceExample = () => {

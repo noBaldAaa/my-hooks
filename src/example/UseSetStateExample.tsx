@@ -2,7 +2,6 @@
  * 例子
  */
 
-import React from "react";
 import { useSetState } from "../hooks";
 
 const UseSetStateExample = () => {

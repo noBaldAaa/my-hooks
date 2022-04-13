@@ -21,5 +21,6 @@ module.exports = {
   rules: {
     "react/jsx-key": true,
     "react/self-closing-comp": true,
+    // "react/react-in-jsx-scope": false,
   },
 };

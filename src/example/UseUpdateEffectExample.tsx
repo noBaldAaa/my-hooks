@@ -2,7 +2,7 @@
  * useUpdateEffect的example
  */
 
-import React, { useState } from "react";
+import { useState } from "react";
 import { useUpdateEffect } from "../hooks/useUpdateEffect";
 
 const UseUpdateEffectExample = () => {

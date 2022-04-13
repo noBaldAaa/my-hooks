@@ -3,7 +3,7 @@
  * React已删除该警告⚠️[https://github.com/facebook/react/blob/main/CHANGELOG.md]
  */
 
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useSafeState } from "../hooks";
 
 const Child = () => {

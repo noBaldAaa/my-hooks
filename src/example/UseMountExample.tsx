@@ -1,7 +1,7 @@
 /**
  * 例子
  */
-import React from "react";
+
 import { useMount } from "../hooks/useMount";
 
 const UseMountExample = () => {
