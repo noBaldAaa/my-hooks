@@ -19,8 +19,8 @@ module.exports = {
   },
   plugins: ["react", "@typescript-eslint"],
   rules: {
-    "react/jsx-key": 2,
-    "react/self-closing-comp": 2,
-    // "react/react-in-jsx-scope": false,
+    "react/jsx-key": 2, //map的时候必须有key
+    "react/self-closing-comp": 2, //必须是闭合标签
+    "react/react-in-jsx-scope": 0, //不用每次引入React
   },
 };

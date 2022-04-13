@@ -3,13 +3,20 @@
  * useDebounceEffect(()=>{},[deps],delay)
  */
 
-import { DependencyList, EffectCallback, useEffect } from "react";
+import { DependencyList, EffectCallback, useEffect, useRef } from "react";
 
 export const useDebounceEffect = (
   effect: EffectCallback,
   deps?: DependencyList,
   delay = 1000
 ) => {
-  useEffect(effect, deps);
-  return;
+  const timeoufRef = useRef<ReturnType<typeof setTimeout>>();
+
+  useEffect(() => {
+    timeoufRef.current = setTimeout(() => {
+      effect();
+    }, delay);
+
+    return () => timeoufRef.current && clearTimeout(timeoufRef.current);
+  }, deps);
 };
