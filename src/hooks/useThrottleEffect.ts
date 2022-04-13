@@ -22,6 +22,7 @@ export const useThrottleEffect = <T, U extends any[]>(
 
   useEffect(() => {
     if (timeout.current) {
+      //如果有正在进行中的
       nextArgs.current = args;
     } else {
       setState(fn(...args));

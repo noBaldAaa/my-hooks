@@ -8,3 +8,4 @@ export * from "./useSafeState";
 export * from "./useIsUnMountRef";
 export * from "./useThrottle";
 export * from "./useThrottleEffect";
+export * from "./useLatestState";

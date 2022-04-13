@@ -9,6 +9,7 @@ import UseThrottleDemo from "./example/UseThrottleDemo";
 import UseUnmountExample from "./example/UseUnmountExample";
 import UseUpdateEffectExample from "./example/UseUpdateEffectExample";
 import UseThrottleEffectExample from "./example/UseThrottleEffectExample";
+import UseLatestStateDemo from "./example/UseLatestStateDemo";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <UseSafeStateExample />
       <UseThrottleDemo />
       <UseThrottleEffectExample />
+      <UseLatestStateDemo />
     </div>
   );
 }

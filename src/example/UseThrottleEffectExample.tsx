@@ -9,8 +9,8 @@ const UseThrottleEffectExample = () => {
   const [state, setState] = useState("hello world");
 
   useThrottleEffect(
-    (s) => {
-      console.log(s, "s");
+    (_state) => {
+      console.log(_state, "_state");
     },
     [state],
     1000
