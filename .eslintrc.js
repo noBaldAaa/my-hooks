@@ -19,8 +19,8 @@ module.exports = {
   },
   plugins: ["react", "@typescript-eslint"],
   rules: {
-    "react/jsx-key": true,
-    "react/self-closing-comp": true,
+    "react/jsx-key": 2,
+    "react/self-closing-comp": 2,
     // "react/react-in-jsx-scope": false,
   },
 };
