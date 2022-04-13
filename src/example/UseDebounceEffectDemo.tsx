@@ -3,14 +3,20 @@
  */
 
 import { useState } from "react";
+import { useMount } from "../hooks";
 import { useDebounceEffect } from "../hooks/useDebounceEffect";
 const UseDebounceEffectDemo = () => {
-  const [number, setNumber] = useState("100");
+  const [number, setNumber] = useState(100);
   const [double, setDouble] = useState(0);
+
+  useMount(() => setNumber(300));
 
   useDebounceEffect(
     () => {
       setDouble(Number(number) * 2);
+      return () => {
+        console.log("销毁前num:", number);
+      };
     },
     [number],
     1000
@@ -22,7 +28,7 @@ const UseDebounceEffectDemo = () => {
       <input
         value={number}
         onChange={(e) => {
-          setNumber(e.target.value);
+          setNumber(Number(e.target.value));
         }}
       />
       <div>{double}</div>
