@@ -11,3 +11,4 @@ export * from "./useThrottleEffect";
 export * from "./useLatestState";
 export * from "./useDebounceEffect";
 export * from "./useDeepCompareEffect";
+export * from "./usePrevious";

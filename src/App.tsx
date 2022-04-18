@@ -1,4 +1,3 @@
-import React from "react";
 import "./App.css";
 
 import UseDebounceExample from "./example/UseDebounceExample";
@@ -12,6 +11,7 @@ import UseThrottleEffectExample from "./example/UseThrottleEffectExample";
 import UseLatestStateDemo from "./example/UseLatestStateDemo";
 import UseDebounceEffectDemo from "./example/UseDebounceEffectDemo";
 import UseDeepCompareEffectDemo from "./example/UseDeepCompareEffectDemo";
+import UsePreviousDemo from "./example/UsePreviousDemo";
 
 function App() {
   return (
@@ -27,6 +27,7 @@ function App() {
       <UseLatestStateDemo />
       <UseDebounceEffectDemo />
       <UseDeepCompareEffectDemo />
+      <UsePreviousDemo />
     </div>
   );
 }
