@@ -18,7 +18,6 @@ export const useDeepCompareEffect = (
 
   if (isEqual(preRef.current, deps)) {
     //相同则不处理
-    return;
   } else {
     preRef.current = deps; //更新之前deps
     updateRef.current += 1; //更新updateRef 让useEffect执行

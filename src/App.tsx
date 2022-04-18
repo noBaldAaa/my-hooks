@@ -11,6 +11,7 @@ import UseUpdateEffectExample from "./example/UseUpdateEffectExample";
 import UseThrottleEffectExample from "./example/UseThrottleEffectExample";
 import UseLatestStateDemo from "./example/UseLatestStateDemo";
 import UseDebounceEffectDemo from "./example/UseDebounceEffectDemo";
+import UseDeepCompareEffectDemo from "./example/UseDeepCompareEffectDemo";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <UseThrottleEffectExample />
       <UseLatestStateDemo />
       <UseDebounceEffectDemo />
+      <UseDeepCompareEffectDemo />
     </div>
   );
 }
