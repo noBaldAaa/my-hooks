@@ -13,6 +13,7 @@ import UseDebounceEffectDemo from "./example/UseDebounceEffectDemo";
 import UseDeepCompareEffectDemo from "./example/UseDeepCompareEffectDemo";
 import UsePreviousDemo from "./example/UsePreviousDemo";
 import UseCountDownDemo from "./example/UseCountDownDemo";
+import UseBooleanDemo from "./example/UseBooleanDemo";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
       <UseDeepCompareEffectDemo />
       <UsePreviousDemo />
       <UseCountDownDemo />
+      <UseBooleanDemo />
     </div>
   );
 }
