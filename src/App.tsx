@@ -12,6 +12,7 @@ import UseLatestStateDemo from "./example/UseLatestStateDemo";
 import UseDebounceEffectDemo from "./example/UseDebounceEffectDemo";
 import UseDeepCompareEffectDemo from "./example/UseDeepCompareEffectDemo";
 import UsePreviousDemo from "./example/UsePreviousDemo";
+import UseCountDownDemo from "./example/UseCountDownDemo";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
       <UseDebounceEffectDemo />
       <UseDeepCompareEffectDemo />
       <UsePreviousDemo />
+      <UseCountDownDemo />
     </div>
   );
 }
