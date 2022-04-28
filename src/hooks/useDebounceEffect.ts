@@ -19,7 +19,7 @@ export const useDebounceEffect = (
   delay = 1000
 ) => {
   const timeoufRef = useRef<ReturnType<typeof setTimeout>>();
-  const [refresh, setRefresh] = useState({}); //解决effect中执行销毁函数的问题
+  const [refresh, setRefresh] = useState({}); //用于更新effect
 
   useEffect(() => {
     timeoufRef.current = setTimeout(() => {

@@ -4,7 +4,7 @@
 
 import { useRef } from "react";
 
-export function useFirstMountState(): boolean {
+export function useFirstMount(): boolean {
   const isFirst = useRef(true);
 
   if (isFirst.current) {
