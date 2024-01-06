@@ -4,4 +4,4 @@
 npx lint-staged
 
 # 全量检测
-yarn run tsc 
+# yarn run tsc 

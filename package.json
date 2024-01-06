@@ -25,11 +25,15 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "type-check": "tsc --noEmit"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown",
-    "src/**.{js,jsx,ts,tsx}": "eslint --ext .js,.jsx,.ts,.tsx",
+    "src/**.{js,jsx,ts,tsx}": [
+      "yarn run type-check",
+      "eslint --ext .js,.jsx,.ts,.tsx"
+    ],
     "**/*.{less,css}": "stylelint --fix"
   },
   "browserslist": {
